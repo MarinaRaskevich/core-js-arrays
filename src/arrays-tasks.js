@@ -442,7 +442,9 @@ function getIndicesOfOddNumbers(numbers) {
  *    getHexRGBValues([]) => []
  */
 function getHexRGBValues(arr) {
-  throw new Error('Not implemented');
+  return arr.map(
+    (num) => `#${num.toString(16).toUpperCase().padStart(6, '0')}`
+  );
 }
 
 /**
