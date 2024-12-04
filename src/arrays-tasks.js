@@ -478,7 +478,7 @@ function getMaxItems(arr, n) {
  *    findCommonElements([1, 2, 3], ['a', 'b', 'c']) => []
  */
 function findCommonElements(arr1, arr2) {
-  throw new Error('Not implemented');
+  return arr1.filter((element) => arr2.includes(element));
 }
 
 /**
